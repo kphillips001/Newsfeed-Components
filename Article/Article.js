@@ -140,10 +140,15 @@ function create(obj) {
   paragraphOne.textContent = obj.firstParagraph;
   paragraphTwo.textContent = obj.secondParagraph;
   paragraphThree.textContent = obj.thirdParagraph;
-  button.textContent = "Click to Open";
+  button.textContent = "Button";
 
   article.classList.add('article');
   date.classList.add('date');
   button.classList.add('expandButton');
 
+  button.addEventListener('click', (e) => {
+    article.classList.toggle('article-open');
+  });
+
+  return article;
 }
