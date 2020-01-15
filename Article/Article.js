@@ -142,4 +142,8 @@ function create(obj) {
   paragraphThree.textContent = obj.thirdParagraph;
   button.textContent = "Click to Open";
 
+  article.classList.add('article');
+  date.classList.add('date');
+  button.classList.add('expandButton');
+
 }
