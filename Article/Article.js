@@ -115,7 +115,7 @@ const data = [
 
 const articles = document.querySelector('.articles');
 
-data.forEach((obj) => {
+data.map((obj) => {
   articles.appendChild(create(obj));
 });
 
@@ -128,5 +128,11 @@ function create(obj) {
   const paragraphThree = document.createElement('p');
   const button = document.createElement('span');
 
+  article.appendChild(title);
+  article.appendChild(date);
+  article.appendChild(paragraphOne);
+  article.appendChild(paragraphTwo);
+  article.appendChild(paragraphThree);
+  article.appendChild(button);
 
 }
