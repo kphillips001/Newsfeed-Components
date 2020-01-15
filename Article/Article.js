@@ -135,4 +135,11 @@ function create(obj) {
   article.appendChild(paragraphThree);
   article.appendChild(button);
 
+  title.textContent = obj.title;
+  date.textContent = obj.date;
+  paragraphOne.textContent = obj.firstParagraph;
+  paragraphTwo.textContent = obj.secondParagraph;
+  paragraphThree.textContent = obj.thirdParagraph;
+  button.textContent = "Click to Open";
+
 }
