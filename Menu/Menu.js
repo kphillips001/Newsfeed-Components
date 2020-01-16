@@ -41,5 +41,9 @@ function createMenu(arr) {
   const menu = document.querySelector('div');
   const list = document.querySelector('ul');
 
-  
+  arr.map((element) => {
+    let listItem = document.createElement('li');
+    listItem.textContent = element;
+    list.appendChild(listItem); 
+  })
 }
