@@ -34,3 +34,5 @@ let menuItems = [
   
 */
 const menu = document.querySelector('header'); 
+
+menu.appendChild(createMenu(menuItems)); 
