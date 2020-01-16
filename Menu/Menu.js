@@ -36,3 +36,10 @@ let menuItems = [
 const menu = document.querySelector('header'); 
 
 menu.appendChild(createMenu(menuItems)); 
+
+function createMenu(arr) {
+  const menu = document.querySelector('div');
+  const list = document.querySelector('ul');
+
+  
+}
